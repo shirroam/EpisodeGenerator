@@ -1,0 +1,64 @@
+body {
+  min-height: 100vh;
+  background: #212534;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  box-sizing: border-box;
+}
+
+h1, h2, p {
+  color: white;
+  font-family: "Titan One", cursive;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+.img-container {
+  display: flex; 
+  gap: 20px; 
+}
+
+.img-container > div {
+  flex: 1; 
+  text-align: center; 
+  border: 1px solid #ccc; 
+  padding: 10px; 
+  transition: all 0.3s ease;
+  border-radius: 10px;
+}
+
+.img-container > div:hover {
+  background-color: rgba(88, 199, 250, 0.2); 
+  color: rgb(88, 199, 250);
+  border-color: rgb(88, 199, 250); 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+  transform: scale(1.05);
+}
+
+button {
+  background-color: #212534; 
+  color: white; 
+  border: 1px solid #ccc;
+  padding: 10px 20px; 
+  border-radius: 5px;
+  font-family: "Titan One", cursive; 
+  cursor: pointer; 
+  transition: all 0.3s ease; 
+}
+
+button:hover {
+  background-color: rgba(88, 199, 250, 0.2); 
+  color: rgb(88, 199, 250);
+  border-color: rgb(88, 199, 250); 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transform: scale(1.05);
+}

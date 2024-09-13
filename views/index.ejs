@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
+
+    <title>Your Rick and Morty Episode</title>
+</head>
+<body>
+    <h1>What's your Rick and Morty episode?</h1>
+    <!-- <button id="generateEpisodeButton">Create Episode</button> -->
+
+    <div class="img-container">
+        <div class="box friend">
+            <h2>Friend</h2>
+            <p><%= friend.name %></p>
+            <p>Species: <%= friend.species %></p>
+            <img src="<%= friend.image %>"/>
+            <!-- <img src="../images/all_characters.jpg" alt="Characters" style="width: 15rem;"> -->
+        </div>
+
+        <div class="box location">
+            <h2>Location</h2>
+            <p><%= location.name %></p>
+            <p>Type: <%= location.type %></p>
+            <p>Dimension: <%= location.dimension %></p>
+            <!-- <img src="../images/all_characters.jpg" alt="Characters" style="width: 15rem;"> -->
+        </div>
+    
+        <div class="box enemy">
+            <h2>Enemy</h2>
+            <p><%= enemy.name %></p>
+            <p>Species: <%= enemy.species %></p>
+            <img src="<%= enemy.image %>"/>
+            <!-- <img src="../images/all_characters.jpg" alt="Characters" style="width:15rem"> -->
+        </div>
+    </div>
+
+    <div>
+        <p>In your episode you will have <%= friend.name %> tagging along with you as a partner in <%= location.name %> where you take it up against <%= enemy.name %>.</p>
+    </div>
+
+    <div>
+        <button id="generateEpisodeButton">Generate Episode</button>
+    </div>
+
+    <script>
+        document.getElementById('generateEpisodeButton').addEventListener('click', function() {
+            location.reload(); // Reloads the page, triggering a new GET request to the server
+        });
+    </script>
+</body>
+</html>
