@@ -17,7 +17,29 @@ This project is a web application that generates a random "Rick and Morty" episo
 
 ## Setup Instructions
 To run this project locally, follow these steps:
-- Clone the repository and navigate to the project directory.
-- Make sure you have Node.js installed. Then, install the required npm packages in the terminal (npm install).
-- Start the Express server in the terminal (npm start) and navigate to "http://localhost:3000
-" in the browser.
+
+1. Clone the repository and navigate to the project directory:
+
+```bash
+git clone https://github.com/shirroam/EpisodeGenerator.git
+cd <project-directory>
+```
+
+2. **Make sure you have Node.js installed. Then, install the required npm packages:**
+
+```bash
+npm install
+```
+
+3. **Start the Express server:**
+
+```bash
+npm start
+```
+
+4. Open your browser and navigate to:
+
+```bash
+http://localhost:3000
+```
+
